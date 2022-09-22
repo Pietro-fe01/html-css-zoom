@@ -27,10 +27,20 @@ header .nav-top ul li a{
     text-decoration: none;
     color: white;
 }
-/*-------------
-  BUTTONS
--------------*/
 
+/*-------------
+EFFETTI / HOVER
+-------------*/
+header .nav-top ul li:hover {
+    background-color: rgba(111, 124, 137, 1);
+}
+footer .nav-bottom .action:hover {
+    color: rgba(255, 255, 255, 1);
+}
+footer .nav-bottom .bottom-right .end-call:hover{
+    text-decoration: underline;
+    text-decoration-color: red;
+}
 /*-------------
   HEADER
 -------------*/
@@ -88,7 +98,7 @@ footer .nav-bottom .action i{
 }
 footer .nav-bottom .action {
     background-color: transparent;
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
     border: none;
     cursor: pointer;
     margin: 0 15px;
@@ -106,6 +116,9 @@ footer .nav-bottom .bottom-right{
 footer .nav-bottom .bottom-center{
     width: 60%;
     justify-content: center;
+}
+footer .nav-bottom .bottom-center #share-screen{
+    color: rgba(75, 200, 0, 1);
 }
 footer .nav-bottom .bottom-right .end-call{
     background-color: #4a4a4a;
