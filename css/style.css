@@ -59,7 +59,7 @@ header .nav-top ul li {
   MAIN
 -------------*/
 main {
-    height: calc(100% - 175.2px);
+    height: calc(100% - 155.2px);
     width: 90%;
     margin: 20px auto;
     overflow-y: auto;
@@ -84,7 +84,7 @@ main .user .user-name{
   FOOTER
 -------------*/
 footer {
-    height: 90px;
+    height: 70px;
     background-color: #222222 ;
 }
 footer .row{
@@ -102,6 +102,7 @@ footer .nav-bottom .action {
     border: none;
     cursor: pointer;
     margin: 0 15px;
+    font-size: 12px;
 }
 footer .nav-bottom .bottom-left{
     width: 20%;
@@ -122,8 +123,11 @@ footer .nav-bottom .bottom-center #share-screen{
 }
 footer .nav-bottom .bottom-right .end-call{
     background-color: #4a4a4a;
-    padding: 35px 20px;
+    padding: 25px 20px;
     color: red;
     margin: 0;
+}
+footer .nav-bottom .bottom-center button:first-of-type span{
+    margin-left: -7px;
 }
 
