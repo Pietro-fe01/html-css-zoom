@@ -19,7 +19,46 @@ body {
 /*-------------
    COMMON
 -------------*/
+row {
+    display: flex;
+}
 
+header .nav-top ul li a{
+    text-decoration: none;
+    color: white;
+}
 /*-------------
   BUTTONS
 -------------*/
+
+/*-------------
+  HEADER
+-------------*/
+header{
+    text-align: right;
+}
+header .nav-top ul li {
+    display: inline-block;
+    margin: 5px 10px;
+    background-color: #4a4a4a;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+/*-------------
+  MAIN
+-------------*/
+main {
+    height: calc(100% - 175.2px);
+    background-color: brown;
+    width: 90%;
+    margin: 20px auto;
+    overflow-y: auto;
+}
+
+/*-------------
+  FOOTER
+-------------*/
+footer {
+    height: 90px;
+    background-color: #222222 ;
+}
