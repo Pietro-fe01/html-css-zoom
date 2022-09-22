@@ -19,7 +19,7 @@ body {
 /*-------------
    COMMON
 -------------*/
-row {
+.row {
     display: flex;
 }
 
@@ -40,21 +40,36 @@ header{
 header .nav-top ul li {
     display: inline-block;
     margin: 5px 10px;
-    background-color: #4a4a4a;
+    background-color: rgba(111, 124, 137, 0.6);
     padding: 8px 10px;
     border-radius: 10px;
 }
+
 /*-------------
   MAIN
 -------------*/
 main {
     height: calc(100% - 175.2px);
-    background-color: brown;
     width: 90%;
     margin: 20px auto;
     overflow-y: auto;
 }
-
+main .user img{
+    width: calc(100% - 10px);
+    display: block;
+    margin: 10px;
+}
+main .user {
+    position: relative;
+}
+main .user .user-name{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    padding: 5px;
+    background-color: rgba(111, 124, 137, 0.6);
+}
 /*-------------
   FOOTER
 -------------*/
