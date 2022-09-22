@@ -77,3 +77,40 @@ footer {
     height: 90px;
     background-color: #222222 ;
 }
+footer .row{
+    align-items: center;
+    height: 100%;
+}
+footer .nav-bottom .action i{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+footer .nav-bottom .action {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 15px;
+}
+footer .nav-bottom .bottom-left{
+    width: 20%;
+}
+footer .nav-bottom .bottom-left .more-actions{
+    margin: 0 15px 0 -2px;
+}
+footer .nav-bottom .bottom-right{
+    width: 20%;
+    justify-content: flex-end;
+}
+footer .nav-bottom .bottom-center{
+    width: 60%;
+    justify-content: center;
+}
+footer .nav-bottom .bottom-right .end-call{
+    background-color: #4a4a4a;
+    padding: 35px 20px;
+    color: red;
+    margin: 0;
+}
+
