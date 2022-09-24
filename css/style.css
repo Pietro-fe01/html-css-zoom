@@ -36,10 +36,24 @@ header .nav-top ul li:hover {
 }
 footer .nav-bottom .action:hover {
     color: rgba(255, 255, 255, 1);
+    background-color: rgba(111, 124, 137, 0.5);
+    border-radius: 20px;
+}
+footer .nav-bottom .more-actions:hover{
+    color: rgba(255, 255, 255, 1);
+    background-color: #222222 ;
+    border-radius: 50%;
 }
 footer .nav-bottom .bottom-right .end-call:hover{
     text-decoration: underline;
     text-decoration-color: red;
+}
+footer .nav-bottom .bottom-center #share-screen:hover{
+    color: rgba(75, 200, 0, 1);
+}
+footer .nav-bottom .same-button:hover{
+    background-color: rgba(111, 124, 137, 1);
+    border-radius: 20px;
 }
 /*-------------
   HEADER
@@ -51,7 +65,7 @@ header .nav-top ul li {
     display: inline-block;
     margin: 5px 10px;
     background-color: rgba(111, 124, 137, 0.6);
-    padding: 8px 10px;
+    padding: 5px 10px;
     border-radius: 10px;
 }
 
@@ -59,23 +73,24 @@ header .nav-top ul li {
   MAIN
 -------------*/
 main {
-    height: calc(100% - 155.2px);
+    height: calc(100% - 148.9px);
     width: 90%;
     margin: 20px auto;
     overflow-y: auto;
 }
-main .user img{
-    width: calc(100% - 10px);
-    display: block;
+main .user{
+    width: calc(100% - 20px);
     margin: 10px;
-}
-main .user {
     position: relative;
+}
+main .user img{
+    width: 100%;
+    display: block;
 }
 main .user .user-name{
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 0;
+    left: 0;
     color: white;
     padding: 5px;
     background-color: rgba(111, 124, 137, 0.6);
@@ -91,41 +106,57 @@ footer .row{
     align-items: center;
     height: 100%;
 }
+footer .nav-bottom .same-button{
+    padding: 5px;
+    margin: 0 5px;
+}
 footer .nav-bottom .action i{
     display: block;
     text-align: center;
-    margin-bottom: 5px;
 }
 footer .nav-bottom .action {
     background-color: transparent;
     color: rgba(255, 255, 255, 0.7);
     border: none;
     cursor: pointer;
-    margin: 0 15px;
     font-size: 12px;
+    padding: 7px;
+    margin: 0 10px;
 }
 footer .nav-bottom .bottom-left{
     width: 20%;
 }
+footer .nav-bottom .more-actions{
+    transform: rotate(180deg);
+    transition: transform 0.5s;
+}
 footer .nav-bottom .bottom-left .more-actions{
-    margin: 0 15px 0 -2px;
+    margin: 0 0 0 -10px;
+}
+footer .nav-bottom .bottom-center .more-actions{
+    margin-right: -5px;
+}
+footer .nav-bottom .more-actions:hover{
+    transform: rotate(0deg);
 }
 footer .nav-bottom .bottom-right{
     width: 20%;
     justify-content: flex-end;
+    align-items: stretch;
 }
 footer .nav-bottom .bottom-center{
     width: 60%;
     justify-content: center;
 }
 footer .nav-bottom .bottom-center #share-screen{
-    color: rgba(75, 200, 0, 1);
+    color: rgba(75, 200, 0, 0.7);
 }
 footer .nav-bottom .bottom-right .end-call{
     background-color: #4a4a4a;
-    padding: 25px 20px;
+    padding: 0 25px;
     color: red;
     margin: 0;
+    border-radius: 0;
 }
 footer .nav-bottom .bottom-center button:first-of-type span{
     margin-left: -7px;
